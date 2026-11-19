@@ -73,39 +73,29 @@ Browser ──► Next.js (App Router) ──► FastAPI
 
 **Requirements:** Python 3.11+, Node.js 22+
 
-### 1. Environment
+### Windows
 
 ```powershell
-cd backend
-python -m venv .venv
-.\.venv\Scripts\python -m pip install -r requirements.txt
-.\.venv\Scripts\python -c "from cryptography.fernet import Fernet; print(Fernet.generate_key().decode())"
+.\scripts\setup.ps1
+.\scripts\dev.ps1
 ```
 
-Copy `.env.example` → `.env` at the repo root and set `ENCRYPTION_KEY` to the generated value.
+### macOS / Linux
 
-### 2. API
-
-```powershell
-cd backend
-.\.venv\Scripts\alembic upgrade head
-.\.venv\Scripts\uvicorn app.main:app --reload --port 8000
-```
-
-### 3. Frontend
-
-```powershell
-cd frontend
-npm install
-npm run dev
+```bash
+chmod +x scripts/*.sh
+./scripts/setup.sh
+./scripts/dev.sh
 ```
 
 Open [http://localhost:3000](http://localhost:3000).
 
+`setup` creates `.env` (with a generated `ENCRYPTION_KEY`), the Python venv, installs dependencies, and runs migrations. `dev` starts the API and frontend.
+
 ### Docker
 
 ```powershell
-# root .env required
+.\scripts\setup.ps1   # or copy .env.example → .env yourself
 docker compose up --build
 ```
 
@@ -114,11 +104,15 @@ docker compose up --build
 ## Tests
 
 ```powershell
-cd backend
-.\.venv\Scripts\python -m pytest
+.\scripts\test.ps1
+```
 
-cd ..\frontend
-npm test
+```bash
+# backend
+cd backend && .venv/bin/python -m pytest
+
+# frontend
+cd frontend && npm test
 ```
 
 ---
