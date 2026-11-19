@@ -2,7 +2,7 @@
 
 **Controlled adversarial security assessments for AI agents.**
 
-Aegis is a full-stack product workspace for putting the agents you operate into industry sandboxes, attacking them with versioned scenarios, and keeping evidence you can re-run and compare. Built as a multi-tenant SaaS with encrypted credentials, organisation isolation, and a clear boundary between customer results and shared intelligence.
+Put your agents in industry sandboxes, run versioned attack scenarios, and keep evidence you can re-run later. Multi-tenant, with encrypted credentials and hard org boundaries.
 
 > Assessment results are internal evidence — not a certification, and not a claim that a live system is safe.
 
