@@ -24,6 +24,3 @@ frontend/.vercel/
 *.egg-info/
 dist/
 build/
-
-
-.github-hold/
