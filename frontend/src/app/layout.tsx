@@ -30,13 +30,13 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: {
-    default: "Aegis — Security assessments for AI agents",
-    template: "%s · Aegis",
+    default: "Aegis Beta — Security assessments for AI agents",
+    template: "%s · Aegis Beta",
   },
   description:
     "Aegis runs controlled adversarial assessments against AI agents, using industry sandboxes with synthetic data and permissioned tools, and keeps the evidence for regression and reporting.",
   openGraph: {
-    title: "Aegis — Security assessments for AI agents",
+    title: "Aegis Beta — Security assessments for AI agents",
     description: "Controlled adversarial testing, industry sandboxes, and regression evidence for AI agents.",
     type: "website",
   },

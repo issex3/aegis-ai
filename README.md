@@ -1,4 +1,4 @@
-# Aegis AI
+# Aegis AI Beta
 
 **Controlled adversarial security assessments for AI agents.**
 

@@ -14,7 +14,7 @@ export function Logo({ className }: { className?: string }) {
   return (
     <span className={cn("inline-flex items-center gap-2 text-[15px] font-medium tracking-[0.02em]", className)}>
       <LogoMark />
-      Aegis
+      Aegis <span className="text-[11px] font-normal uppercase tracking-[0.14em] text-faint">Beta</span>
     </span>
   );
 }
