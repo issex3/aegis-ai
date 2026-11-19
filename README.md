@@ -157,14 +157,6 @@ See `security/` for deeper policy and isolation notes.
 
 ---
 
-## Author
-
-Built as a portfolio-grade full-stack security product by [issex3](https://github.com/issex3).
-
-If you are hiring for product engineering, platform, or AI security work — this repo is meant to show end-to-end ownership: product UX, multi-tenant backend, assessment engine design, and operational security thinking.
-
----
-
 ## License
 
 MIT — see [LICENSE](LICENSE).
